@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-circle-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contacts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg">
+  <br><br>
+  <ion-card class="try">
+  <div class="ion-padding">
+    <ion-text color="danger">
+<p>Enter <strong>at least 3</strong> Emergency Contacts Number</p>
+</ion-text>
+
+<ion-item class="rounded">
+  <ion-label position="floating">Name</ion-label>
+  <ion-input type="text" [(ngModel)]="contact.name" required></ion-input>
+</ion-item>
+<br>
+<ion-item class="rounded">
+  <ion-label position="floating">Number tel</ion-label>
+  <ion-input type="tel" [(ngModel)]="contact.number" required></ion-input>
+</ion-item>
+<br>
+<ion-button expand="block" (click)="createContact(contact)">
+  ADD
+</ion-button>
+<br>
+</div>
+</ion-card>
+</ion-content>

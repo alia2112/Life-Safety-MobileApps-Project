@@ -1,0 +1,47 @@
+<ion-app>
+  <ion-nav [root]="component"></ion-nav>
+
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+       <ion-toolbar>
+        <ion-title class="ion-text-center" color="dark">MENU</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/main">
+            <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        
+        <ion-menu-toggle>
+        <ion-item routerLink="/contact">
+          <ion-icon name="person-add" slot="start"></ion-icon>
+          <ion-label>Add Contact</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/view">
+          <ion-icon name="people" slot="start"></ion-icon>
+          <ion-label>Emergency Contact</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+          <ion-item routerLink="/instructions">
+            <ion-icon name="information-circle-sharp" slot="start"></ion-icon>
+          <ion-label>Instructions</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

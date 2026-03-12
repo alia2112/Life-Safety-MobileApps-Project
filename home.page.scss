@@ -1,0 +1,17 @@
+
+ion-content.bg {
+   
+  --background: linear-gradient(to top, #880808 10%, #fff 120%);
+
+}
+
+ion-button {
+  --background: linear-gradient(to left, #880808 10%, #fff 250%);
+  --background-hover: linear-gradient(to left, #880808 10%, #fff 250%);
+  --background-activated: #880808;
+  --background-focused: #880808;
+  --border-color: white;
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+}

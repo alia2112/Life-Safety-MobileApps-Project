@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-circle-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class=bg>
+  <h2 class="ion-text-center"><strong><i>Register</i></strong></h2>
+  <h6 class="ion-text-center"><i>Create your account</i></h6>
+  <br>
+  <ion-card class="try">
+    <br><br><br>
+    <ion-icon name="person-circle-outline" class="logo"></ion-icon>
+  <br><br><br>
+<ion-item class="rounded">
+  <ion-label position="floating">E-mail</ion-label>
+  <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+</ion-item>
+<br>
+<ion-item class="rounded">
+  <ion-label position="floating">Password</ion-label>
+  <app-show-hide-password>
+  <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </app-show-hide-password>
+</ion-item>
+
+<ion-button class="ion-padding" expand="full" shape="round" (click)="register(user)">
+Create Account
+</ion-button>
+<br>
+<p class="txt ion-text-center">Already have an account?&nbsp;<a routerLink="/login">Login</a></p>
+</ion-card>
+</ion-content>

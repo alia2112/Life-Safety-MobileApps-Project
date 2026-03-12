@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center" color="dark">
+    <ion-title>
+      Life Safety
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+ <ion-content padding class=bg [fullscreen]="true">
+<br><br><br><br>
+<ion-row style="display: flex;  justify-content: space-between;">
+  <div>
+<ion-button shape="circle" (click)="Send()">
+  <ion-text>
+   <strong>ALERT</strong>
+  </ion-text>
+</ion-button>
+<label>ALERT</label>
+</div>
+
+<div>
+  <audio #audio>
+    <source src="assets/emergency.mp3" type="audio/mpeg">
+    </audio>
+ <ion-button shape="circle" (click)="playing ? pauseAudio() : playAudio()">
+      <ion-icon slot="icon-only" name="volume-high"></ion-icon>
+</ion-button><br>
+<label>Alarm</label>
+</div>
+</ion-row>
+<br><br>
+<br><br>
+
+<ion-row style="display: flex;  justify-content: space-between;">
+  <div>
+  <ion-button shape="circle" (click)="Send()" (click)="playing ? pauseAudio() : playAudio()" >
+    <img src="assets/icon.png" width="100%" />
+</ion-button>
+<label>Combine</label>
+</div>
+
+<div>
+  <ion-button shape="circle" (click)="callNum()" >
+    <img src="assets/icon1.png" width="70%" />
+</ion-button>
+<label>Police</label>
+</div>
+
+</ion-row>
+</ion-content>

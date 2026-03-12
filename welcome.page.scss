@@ -1,0 +1,63 @@
+
+ion-content.bg {
+   
+    --background: linear-gradient(to top, #880808 10%, #fff 120%);
+  
+  }
+  
+  
+  
+  ion-slides {
+    height: 100%;
+    --bullet-background: black;
+    --bullet-background-active: black;
+  }
+  
+  ion-button{
+    --border-radius: 0;
+    --border-color: #000;
+    --border-style: solid;
+    --border-width: 1px;
+    --background: linear-gradient(to left, #880808 10%, #fff 300%);
+    --background-hover: linear-gradient(to left, #880808 10%, #fff 250%);
+
+  }
+  
+  .swiper-slide {
+    display: block;
+  }
+  .swiper-slide h2 {
+    margin-top: 2.8rem;
+  }
+  
+  
+  p {
+    padding: 0 40px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ion-color-step-600, #000000);
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  }
+  
+  ion-text{
+    font-size: 12px;
+    color: white;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+  
+  }
+
+h2{
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+h3{
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+
+.col {
+  background: rgba(12, 11, 11, 0.5);
+  border: solid 1px #fff;
+  text-align: center;
+}
